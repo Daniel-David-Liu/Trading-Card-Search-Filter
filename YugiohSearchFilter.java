@@ -27,8 +27,7 @@ public class YugiohSearchFilter {
         HashMap<Integer, List<String>> level = new HashMap<>(); 
         HashMap<Integer, List<String>> atk = new HashMap<>(); 
         HashMap<Integer, List<String>> def = new HashMap<>(); 
-        
-        //1748 cards
+
         scanOb.nextLine(); //Skip the header information at the top of the file. 
        
     while (scanOb.hasNextLine()){ //loop through the text file: 
@@ -48,7 +47,6 @@ public class YugiohSearchFilter {
                     cardInfo[nextSlot] = currentLine.substring(i,j);
                     
                     nextSlot++;
-                    
                     i = j+1; //Skip over the comma we just ran into
                     j = i;
                 }
